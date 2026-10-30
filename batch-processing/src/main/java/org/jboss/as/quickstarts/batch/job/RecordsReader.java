@@ -24,6 +24,7 @@ import java.util.logging.Logger;
 
 import jakarta.batch.api.BatchProperty;
 import jakarta.batch.api.chunk.ItemReader;
+import jakarta.enterprise.context.Dependent;
 import jakarta.inject.Inject;
 import jakarta.inject.Named;
 
@@ -31,6 +32,7 @@ import org.jboss.as.quickstarts.batch.model.Contact;
 
 //This class will read the file and return an instance of Contact to be imported
 @Named("recordsReader")
+@Dependent
 public class RecordsReader implements ItemReader {
 
     // Here you can inject a property defined in import-file.xml

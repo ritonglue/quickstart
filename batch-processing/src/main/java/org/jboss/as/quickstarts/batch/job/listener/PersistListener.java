@@ -21,11 +21,13 @@ import java.util.logging.Logger;
 
 import jakarta.batch.api.chunk.listener.AbstractItemWriteListener;
 import jakarta.batch.runtime.context.JobContext;
+import jakarta.enterprise.context.Dependent;
 import jakarta.inject.Inject;
 import jakarta.inject.Named;
 
 //This listener updates the exit status to show the exception
 @Named("persistListener")
+@Dependent
 public class PersistListener extends AbstractItemWriteListener {
 
     @Inject

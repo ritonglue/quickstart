@@ -24,11 +24,13 @@ import jakarta.batch.operations.JobOperator;
 import jakarta.batch.runtime.BatchRuntime;
 import jakarta.batch.runtime.BatchStatus;
 import jakarta.batch.runtime.context.JobContext;
+import jakarta.enterprise.context.Dependent;
 import jakarta.inject.Inject;
 import jakarta.inject.Named;
 
 //This listener modifies the Job to ABANDONED state if it was restarted once
 @Named("jobListener")
+@Dependent
 public class JobListener extends AbstractJobListener {
 
     @Inject

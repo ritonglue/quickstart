@@ -19,6 +19,7 @@ package org.jboss.as.quickstarts.batch.util;
 import java.util.TimeZone;
 import java.util.logging.Logger;
 
+import jakarta.enterprise.context.Dependent;
 import jakarta.enterprise.inject.Produces;
 import jakarta.enterprise.inject.spi.InjectionPoint;
 import jakarta.inject.Named;
@@ -37,6 +38,7 @@ import jakarta.persistence.PersistenceContext;
  * private EntityManager em;
  * </pre>
  */
+@Dependent
 public class Resources {
 
     @Produces

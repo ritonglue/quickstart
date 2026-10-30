@@ -21,6 +21,7 @@ import java.util.List;
 import java.util.logging.Logger;
 
 import jakarta.batch.api.chunk.AbstractItemWriter;
+import jakarta.enterprise.context.Dependent;
 import jakarta.inject.Inject;
 import jakarta.inject.Named;
 import jakarta.persistence.EntityManager;
@@ -29,6 +30,7 @@ import org.jboss.as.quickstarts.batch.model.Contact;
 
 //This class will persist the contacts chunk at the database. It cleans the database if it's the first execution (no checkpoint)
 @Named("contactsPersister")
+@Dependent
 public class ContactsPersister extends AbstractItemWriter {
 
     @Inject

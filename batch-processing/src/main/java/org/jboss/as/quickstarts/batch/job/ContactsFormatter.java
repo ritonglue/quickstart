@@ -19,6 +19,7 @@ package org.jboss.as.quickstarts.batch.job;
 import java.util.logging.Logger;
 
 import jakarta.batch.api.chunk.ItemProcessor;
+import jakarta.enterprise.context.Dependent;
 import jakarta.inject.Inject;
 import jakarta.inject.Named;
 
@@ -26,6 +27,7 @@ import org.jboss.as.quickstarts.batch.model.Contact;
 
 //This class will update the contact to the proper case and apply a mask to the phone number
 @Named("contactFormatter")
+@Dependent
 public class ContactsFormatter implements ItemProcessor {
 
     @Inject
