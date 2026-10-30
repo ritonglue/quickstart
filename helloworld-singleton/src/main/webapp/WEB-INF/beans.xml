@@ -20,5 +20,5 @@
        xsi:schemaLocation="
          https://jakarta.ee/xml/ns/jakartaee
          https://jakarta.ee/xml/ns/jakartaee/beans_4_0.xsd"
-       bean-discovery-mode="all">
+       bean-discovery-mode="annotated">
 </beans>
