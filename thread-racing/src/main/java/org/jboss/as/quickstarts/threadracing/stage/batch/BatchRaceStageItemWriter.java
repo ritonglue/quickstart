@@ -17,6 +17,7 @@
 package org.jboss.as.quickstarts.threadracing.stage.batch;
 
 import jakarta.batch.api.chunk.AbstractItemWriter;
+import jakarta.enterprise.context.Dependent;
 import jakarta.inject.Named;
 import java.util.List;
 
@@ -24,6 +25,7 @@ import java.util.List;
  * The race batch job component that writes a chunk of processed items.
  * @author Eduardo Martins
  */
+@Dependent
 @Named
 public class BatchRaceStageItemWriter extends AbstractItemWriter {
 

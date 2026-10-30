@@ -20,6 +20,7 @@ import org.jboss.as.quickstarts.threadracing.EnvironmentProperties;
 import org.jboss.as.quickstarts.threadracing.Race;
 import org.jboss.as.quickstarts.threadracing.stage.RaceStage;
 
+import jakarta.enterprise.context.Dependent;
 import jakarta.ws.rs.client.Client;
 import jakarta.ws.rs.client.ClientBuilder;
 import jakarta.ws.rs.client.WebTarget;
@@ -32,6 +33,7 @@ import org.jboss.resteasy.client.jaxrs.ResteasyClientBuilder;
  *
  * @author Eduardo Martins
  */
+@Dependent
 public class JAXRSRaceStage implements RaceStage {
 
     @Override

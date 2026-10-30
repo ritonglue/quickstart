@@ -22,6 +22,7 @@ import org.jboss.as.quickstarts.threadracing.stage.RaceStage;
 import jakarta.annotation.Resource;
 import jakarta.enterprise.concurrent.ManagedExecutorService;
 import jakarta.enterprise.concurrent.ManagedScheduledExecutorService;
+import jakarta.enterprise.context.Dependent;
 import javax.naming.InitialContext;
 import java.util.concurrent.TimeUnit;
 
@@ -30,6 +31,7 @@ import java.util.concurrent.TimeUnit;
  *
  * @author Eduardo Martins
  */
+@Dependent
 public class EEConcurrencyRaceStage implements RaceStage {
 
     /**

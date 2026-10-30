@@ -20,6 +20,7 @@ import org.jboss.as.quickstarts.threadracing.Race;
 import org.jboss.as.quickstarts.threadracing.stage.RaceStage;
 
 import jakarta.annotation.Resource;
+import jakarta.enterprise.context.Dependent;
 import jakarta.jms.ConnectionFactory;
 import jakarta.jms.JMSConsumer;
 import jakarta.jms.JMSContext;
@@ -32,6 +33,7 @@ import java.util.UUID;
  *
  * @author Eduardo Martins
  */
+@Dependent
 public class JMSRaceStage implements RaceStage {
 
     /**

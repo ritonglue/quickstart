@@ -17,6 +17,7 @@
 package org.jboss.as.quickstarts.threadracing.stage.batch;
 
 import jakarta.batch.api.chunk.AbstractItemReader;
+import jakarta.enterprise.context.Dependent;
 import jakarta.inject.Named;
 import java.io.Serializable;
 import java.util.ArrayList;
@@ -29,6 +30,7 @@ import java.util.Random;
  *
  * @author Eduardo Martins
  */
+@Dependent
 @Named
 public class BatchRaceStageItemReader extends AbstractItemReader {
 

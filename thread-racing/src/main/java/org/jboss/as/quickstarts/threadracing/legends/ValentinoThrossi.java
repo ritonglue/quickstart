@@ -18,11 +18,14 @@ package org.jboss.as.quickstarts.threadracing.legends;
 
 import org.jboss.as.quickstarts.threadracing.Racer;
 
+import jakarta.enterprise.context.Dependent;
+
 /**
  * A MotoGP legend.
  *
  * @author Eduardo Martins
  */
+@Dependent
 public class ValentinoThrossi extends Racer {
 
     public ValentinoThrossi() {

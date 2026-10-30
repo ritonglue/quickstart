@@ -18,11 +18,14 @@ package org.jboss.as.quickstarts.threadracing.legends;
 
 import org.jboss.as.quickstarts.threadracing.Racer;
 
+import jakarta.enterprise.context.Dependent;
+
 /**
  * A rally legend.
  *
  * @author Eduardo Martins
  */
+@Dependent
 public class SebastienThroeb extends Racer {
 
     public SebastienThroeb() {

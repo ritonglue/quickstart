@@ -23,6 +23,7 @@ import jakarta.batch.operations.JobOperator;
 import jakarta.batch.runtime.BatchRuntime;
 import jakarta.batch.runtime.BatchStatus;
 import jakarta.batch.runtime.JobExecution;
+import jakarta.enterprise.context.Dependent;
 import java.util.Properties;
 
 /**
@@ -34,6 +35,7 @@ import java.util.Properties;
  *
  * @author Eduardo Martins
  */
+@Dependent
 public class BatchRaceStage implements RaceStage {
 
     @Override

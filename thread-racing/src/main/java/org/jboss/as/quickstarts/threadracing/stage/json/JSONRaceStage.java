@@ -19,6 +19,7 @@ package org.jboss.as.quickstarts.threadracing.stage.json;
 import org.jboss.as.quickstarts.threadracing.Race;
 import org.jboss.as.quickstarts.threadracing.stage.RaceStage;
 
+import jakarta.enterprise.context.Dependent;
 import jakarta.json.Json;
 import jakarta.json.JsonObject;
 import jakarta.json.JsonReader;
@@ -31,6 +32,7 @@ import java.io.StringWriter;
  *
  * @author Eduardo Martins
  */
+@Dependent
 public class JSONRaceStage implements RaceStage {
 
     @Override

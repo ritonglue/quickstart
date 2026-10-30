@@ -17,12 +17,14 @@
 package org.jboss.as.quickstarts.threadracing.stage.batch;
 
 import jakarta.batch.api.chunk.ItemProcessor;
+import jakarta.enterprise.context.Dependent;
 import jakarta.inject.Named;
 
 /**
  * The batch component that processes/filters read items, one by one.
  * @author Eduardo Martins
  */
+@Dependent
 @Named
 public class BatchRaceStageItemProcessor implements ItemProcessor {
 
