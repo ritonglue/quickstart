@@ -16,6 +16,7 @@
 
 package org.jboss.as.quickstarts.ee_security;
 
+import jakarta.enterprise.context.Dependent;
 import jakarta.enterprise.inject.Produces;
 
 import org.wildfly.security.auth.server.SecurityDomain;
@@ -25,6 +26,7 @@ import org.wildfly.security.auth.server.SecurityIdentity;
  *
  * @author <a href="mailto:darran.lofthouse@jboss.com">Darran Lofthouse</a>
  */
+@Dependent
 public class SecurityFactory {
 
     @Produces
