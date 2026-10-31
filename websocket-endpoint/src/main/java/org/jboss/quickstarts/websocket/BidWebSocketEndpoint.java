@@ -23,6 +23,7 @@ import java.util.Set;
 import java.util.logging.Logger;
 
 import jakarta.annotation.PostConstruct;
+import jakarta.enterprise.context.Dependent;
 import jakarta.websocket.EncodeException;
 import jakarta.websocket.OnClose;
 import jakarta.websocket.OnError;
@@ -44,6 +45,7 @@ import org.jboss.quickstarts.websocket.model.BiddingFactory;
  * @author <a href="mailto:benevides@redhat.com">Rafael Benevides</a>
  *
  */
+@Dependent
 @ServerEndpoint(value = "/bidsocket", encoders = { BiddingEncoder.class }, decoders = { MessageDecoder.class })
 public class BidWebSocketEndpoint {
 
