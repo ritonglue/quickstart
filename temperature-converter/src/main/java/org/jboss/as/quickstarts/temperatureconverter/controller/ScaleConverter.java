@@ -16,6 +16,7 @@
  */
 package org.jboss.as.quickstarts.temperatureconverter.controller;
 
+import jakarta.enterprise.context.Dependent;
 import jakarta.faces.component.UIComponent;
 import jakarta.faces.context.FacesContext;
 import jakarta.faces.convert.Converter;
@@ -30,6 +31,7 @@ import org.jboss.as.quickstarts.temperatureconverter.ejb.Scale;
  *
  */
 @Named
+@Dependent
 public class ScaleConverter implements Converter {
 
     public Scale[] getScales() {
